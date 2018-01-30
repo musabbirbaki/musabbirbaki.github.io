@@ -12,11 +12,32 @@
          background: rgba(34,34,34,0.75);
     }
 
-    #slidePictureDiv:hover {
-         -webkit-backdrop-filter: blur(5px);
-         backdrop-filter: blur(5px);
-         background: rgba(34,34,34,0.75);
+    #summarySlot:hover{
+      /*background-color: #F8F8F8;*/
+      font-size: 110%;
     }
+
+    @keyframes pulse_animation {
+    	0% { transform: scale(1); }
+    	30% { transform: scale(1); }
+    	40% { transform: scale(1.2); }
+    	50% { transform: scale(1); }
+    	60% { transform: scale(1); }
+    	70% { transform: scale(1); }
+    	80% { transform: scale(1.2); }
+    	100% { transform: scale(1); }
+    }
+
+    .pulse:hover {
+    	animation-name: pulse_animation;
+    	animation-duration: 1500ms;
+    	transform-origin:70% 70%;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: linear;
+    }
+
+
+
   </style>
 
   <head>
@@ -142,34 +163,33 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="pictures/pen.jpg" alt="Generic placeholder image" width="140" height="140">
+          <div id="summarySlot" class="col-lg-4">
+            <img class="rounded-circle pulse" src="pictures/pen.jpg" alt="Image Not available :/" width="140" height="140" onclick="location.href = 'resume.html';">
             <h2>Resume</h2>
             <p>Formalities.....</p>
-            <p><a class="btn btn-secondary" href="resume.html" role="button">View details &raquo;</a></p>
+            <!--<p><a class="btn btn-secondary" href="resume.html" role="button">View details &raquo;</a></p>-->
           </div><!-- /.col-lg-4 -->
 
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="pictures/chess.jpg" alt="Generic placeholder image" width="140" height="140">
+          <div id="summarySlot" class="col-lg-4">
+            <img class="rounded-circle pulse" src="pictures/chess.jpg" alt="Image Not available :/" width="140" height="140" onclick="location.href = '#'";>
             <h2>Skills</h2>
             <p>Skills that I have or want to acquire</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
           </div><!-- /.col-lg-4 -->
 
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="pictures/quadcopter.jpg" alt="Generic placeholder image" width="140" height="140">
+          <div id="summarySlot" class="col-lg-4">
+            <img class="rounded-circle pulse" src="pictures/quadcopter.jpg" alt="Image Not available :/" width="140" height="140" onclick="location.href = '#'";>
             <h2>Projects</h2>
-            <p>Here are some of the projects I've worked on during my years as a student.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <p>Here are some of the projects I've worked on.</p>
+            <!--<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
 
         <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider" style="position: relative; z-index: 1;">
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
+        <div class="row featurette" style="position: relative; z-index: 1;">
           <div class="col-md-7">
             <h2 id="AboutMeParagraph" class="featurette-heading">Hello there!</h2>
             <h2><span class="text-success">Musabbir Ahmed Baki here.</span></h2>
@@ -181,7 +201,9 @@
           </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" style="position: relative; z-index: 1;">
+
+
         <!--
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
