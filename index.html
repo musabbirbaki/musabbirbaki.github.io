@@ -1,6 +1,24 @@
 
 <!doctype html>
 <html lang="en">
+  <style>
+    #slideText{
+      z-index:1;
+    }
+
+    #slideText:hover {
+         -webkit-backdrop-filter: blur(5px);
+         backdrop-filter: blur(5px);
+         background: rgba(34,34,34,0.75);
+    }
+
+    #slidePictureDiv:hover {
+         -webkit-backdrop-filter: blur(5px);
+         backdrop-filter: blur(5px);
+         background: rgba(34,34,34,0.75);
+    }
+  </style>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
@@ -63,10 +81,12 @@
 
               <div class="carousel-caption">
               <!--<div class="carousel-caption text-left">-->
-                <h1 style="z-index:1">Gatineau</h1>
-                <p style="z-index:1">Service Canada Work Experience</p>
+                <div id="slideText">
+                  <h1>Gatineau</h1>
+                  <p>Service Canada Work Experience</p>
+                </div>
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
-                <p style="z-index:1"><a class="btn btn-lg btn-primary" href="#" role="button">Work at Gatineau</a></p>
+                <!--<p style="z-index:1"><a class="btn btn-lg btn-primary" href="#" role="button">Work at Gatineau</a></p>-->
               </div>
               <!--middle picture-->
               <img class="img-fluid" src="pictures/gatineau.jpg"  alt="Responsive image" style="position: relative; top: 0px; padding-left: 10%;">
@@ -77,9 +97,11 @@
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>About Me</h1>
-                <p>My adventures and experiences</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">About Me</a></p>
+                <div id="slideText">
+                  <h1>About Me</h1>
+                  <p>My adventures and experiences</p>
+                </div>
+                <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">About Me</a></p>-->
               </div>
               <!--middle picture-->
               <img class="img-fluid" src="pictures/dragon.jpg"  alt="Responsive image" style="position: relative; top: 0px; padding-left: 7%;">
@@ -90,9 +112,11 @@
             <div class="container">
               <div class="carousel-caption">
               <!--<div class="carousel-caption text-right">-->
-                <h1>UOIT</h1>
-                <p>My time at University of Ontario Institute of Technology</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">School</a></p>
+                <div id="slideText">
+                  <h1>UOIT</h1>
+                  <p>My time at University of Ontario Institute of Technology</p>
+                </div>
+                <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">School</a></p>-->
               </div>
               <!--middle picture-->
               <img class="img-fluid" src="pictures/uoit.jpg"  alt="Responsive image" style="position: relative; top: 0px; padding-left: 10%;">
