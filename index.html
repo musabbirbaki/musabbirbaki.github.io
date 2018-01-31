@@ -36,7 +36,17 @@
     	animation-timing-function: linear;
     }
 
+    .slideCenterPicture {
+        position: relative;
+        /*top: 0px;*/
+        padding-left: 10%;
+        min-width: auto;
+    }
 
+    @media (min-width: 40em) {
+      /* Bump up size of carousel content */
+
+    }
 
   </style>
 
@@ -48,7 +58,7 @@
     <!--<link rel="icon" href="https://getbootstrap.com/favicon.ico">-->
     <link rel="icon" href="pictures/favicon.png">
 
-    <title>Musabbir Baki Portfolio Construction</title>
+    <title>Musabbir Baki Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -110,7 +120,7 @@
                 <!--<p style="z-index:1"><a class="btn btn-lg btn-primary" href="#" role="button">Work at Gatineau</a></p>-->
               </div>
               <!--middle picture-->
-              <img class="img-fluid" src="pictures/gatineau.jpg"  alt="Responsive image" style="position: relative; top: 0px; padding-left: 10%;">
+              <img class="img-fluid slideCenterPicture" src="pictures/gatineau.jpg"  alt="Responsive image">
             </div>
           </div>
           <div class="carousel-item">
@@ -125,7 +135,7 @@
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">About Me</a></p>-->
               </div>
               <!--middle picture-->
-              <img class="img-fluid" src="pictures/dragon.jpg"  alt="Responsive image" style="position: relative; top: 0px; padding-left: 7%;">
+              <img class="img-fluid slideCenterPicture" src="pictures/dragon.jpg"  alt="Responsive image">
             </div>
           </div>
           <div class="carousel-item">
@@ -140,7 +150,7 @@
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">School</a></p>-->
               </div>
               <!--middle picture-->
-              <img class="img-fluid" src="pictures/uoit.jpg"  alt="Responsive image" style="position: relative; top: 0px; padding-left: 10%;">
+              <img class="img-fluid slideCenterPicture" src="pictures/uoit.jpg"  alt="Responsive image">
             </div>
           </div>
         </div>
